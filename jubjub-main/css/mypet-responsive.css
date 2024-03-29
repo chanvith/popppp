@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------------------------header------------------------------------------------*/
+header{
+    display: flex;
+    align-items: center;
+    background-color: #106050;
+}
+nav {
+    display: flex;
+    /*background-color: brown;*/
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav ul li {
+    margin-right: 5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    margin-right: 0.5rem;
+}
+/*---------------------------------responsive for navbar---------------------------------------*/
+@media screen and (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+}
+/*---------------------------------Mypetcontent------------------------------------------------*/
+.mypet-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
+}
+.box{
+    background-color:white;
+    margin:  30px 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px aqua;
+}
+.image{
+    width: 100%;
+
+    border-radius: 10px 10px 0 0;
+}
+.text-content{
+    padding: 15px;
+    
+}
+/*---------------------------------responsive for mypet---------------------------------------*/
+@media screen and (max-width:786px) {
+    .mypet-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr)
+}
+}
+@media screen and (max-width:480px) {
+    .mypet-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr)
+}
+}
+/*---------------------------------section-hero----------------------------------------------*/
+.hero{
+background-image: url('https://www.peta.org/wp-content/uploads/2022/07/sleeping-white-rabbit.jpg') ;
+width: 1000px;
+height: 500px;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.text-hero{
+    margin: 0%;
+    color:white;
+    font-size: 68px;
+}
+.circle {
+    border-radius: 100%;
+    width: 85px;
+}
+footer{
+    background-color: #106050;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
